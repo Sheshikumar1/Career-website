@@ -9,7 +9,7 @@
     font-size:40px;
     font-family:Roboto;
     font-weight:normal;
-    color:rgb(100,100,100);
+    color:rgb(50,50,50);
     text-align:center;
     
     }
@@ -19,15 +19,35 @@
     object-fit:cover;
     
     }
+    
+    h2{
+    font-family:Roboto;
+    font-size:30px;
+    color:rgb(100,100,100);
+    text-align:center;
+    font-weight:normal;
+    
+    }
+    p{
+    font-family:Roboto;
+    font-size:30px;
+    color:rgb(80,80,80);
+   
+    }
+    .container{
+    max-width:720px;
+    }
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Career Website</h1>
     <img id="banner" src="{{url_for('static',filename='banner.jpeg')}}">
-    <h2>About</h2>
+    <h2>About career Website</h2>
     <p>So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? Are you copying and pasting an actual font?</p>
     <h2>Open positions</h2>
     <p>Todo show job openings</p>
     <button>Contact us</button>
+    </div>
 </body>
 </html>
