@@ -28,7 +28,7 @@
     font-weight:normal;
     
     }
-    p{
+    .bodytext {
     font-family:Roboto;
     font-size:30px;
     color:rgb(80,80,80);
@@ -36,7 +36,11 @@
     }
     .container{
     max-width:720px;
+    margin:0 auto 0;
     }
+   
+   
+    
     </style>
 </head>
 <body>
@@ -44,10 +48,13 @@
     <h1>Career Website</h1>
     <img id="banner" src="{{url_for('static',filename='banner.jpeg')}}">
     <h2>About career Website</h2>
-    <p>So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? Are you copying and pasting an actual font?</p>
+    <p class="bodytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum aperiam cum aut dolores tempora facere debitis excepturi, repellendus deserunt neque explicabo voluptatem labore inventore? Officia ad sint ea ut?</p>
     <h2>Open positions</h2>
-    <p>Todo show job openings</p>
+    <p class="bodytext">Todo show job openings</p>
+    <div style="text-align: center;"> 
     <button>Contact us</button>
+    <p>Copyright 2024,career-website</p>
+    </div>
     </div>
 </body>
 </html>
