@@ -12,7 +12,7 @@ JOBS=[
         
         'id':2,
         'title': 'Data Engineer',
-        'salary':'Rs.25,000,00',
+        
         'location':'Hyderabad India'
     
     },
@@ -32,7 +32,7 @@ JOBS=[
 ]
 @app.route('/')
 def home():
-    return render_template('hello.html',jobs=JOBS)
+    return render_template('hello.html',jobs=JOBS,company='sheshi')
 
 if __name__=='__main__':
     app.run(debug=True)

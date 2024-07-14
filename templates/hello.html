@@ -15,14 +15,18 @@
 </head>
 <body>
     <div class="container">
-    <h1 class="text-center mt-2 mb-4" >Career Website</h1>
+    <h1 class="text-center mt-2 mb-4" >
+        {{ company }} Career Website</h1>
     <img id="banner" class="img-fluid" src="{{url_for('static',filename='banner.jpeg')}}">
     <h2 class="text-center mt-2 mb-4">About career Website</h2>
     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas deleniti amet illum consequatur, veritatis, cupiditate similique dolorem reiciendis sunt laboriosam rerum quod at quam debitis modi reprehenderit excepturi? Similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum aperiam cum aut dolores tempora facere debitis excepturi, repellendus deserunt neque explicabo voluptatem labore inventore? Officia ad sint ea ut?</p>
     <h2 class="text-center mt-2 mb-4">Open positions</h2>
 
-    <p> 
-        {{ jobs }}
+    <p> <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+        </div>
     </p>
     <div class="text-center"> 
     <button  class="btn btn-primary btn-lg">Contact us</button>
